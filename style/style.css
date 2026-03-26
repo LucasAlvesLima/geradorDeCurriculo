@@ -1,0 +1,104 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#c5cdd4;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin:30px 0;
+}
+
+.layout{
+    display:grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap:40px;
+}
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+textarea{
+    resize:none;
+    height:80px;
+}
+
+button{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#007bff;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.curriculo{
+    background:white;
+    padding:40px;
+    width:100%;
+}
+
+.curriculo h2{
+    margin-top:0;
+}
+
+.pdfcv{ 
+    background:#1976d2;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:20px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.pdfcv:hover{
+    background:#125ca1;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px){
+    .layout{
+        grid-template-columns:1fr;
+    }
+}
